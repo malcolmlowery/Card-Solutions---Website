@@ -1,0 +1,30 @@
+.navigation {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+   margin: 0 40px;
+   position: relative;
+   top: 20px;
+}
+
+.navigation__logo {
+   height: 32px;
+   position: relative;
+   top: -2px;
+}
+
+.navigation__links {
+   display: flex;
+   list-style: none;
+}
+
+.navigation__links > li {
+   padding: 0 20px;
+}
+
+.navigation__links > li > a {
+   color: #fff;
+   font-size: 14px;
+   text-decoration: none;
+   font-weight: 300;
+}

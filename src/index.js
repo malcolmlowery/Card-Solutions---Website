@@ -1,19 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import './globals';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 
-// Views
-import Home from './views/home';
-
-const App = () => {
+const Index = () => {
    return(
       <BrowserRouter>
-         <Routes>
-            <Route path='/' element={<Home />} />
-         </Routes>
+         <App />
       </BrowserRouter>
    )
 };
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(<Index/>, document.getElementById('root'));
