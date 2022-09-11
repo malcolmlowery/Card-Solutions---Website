@@ -1,0 +1,16 @@
+.avatar {
+   border-radius: 25px;
+   height: 45px;
+   object-fit: contain;
+   overflow: hidden;
+   width: 45px;
+   border-style: solid;
+   border-color: #191919;
+   border-width: 3px;
+}
+
+.avatar > img {
+   height: 45px;
+   object-fit: cover;
+   position: relative;
+}

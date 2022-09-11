@@ -1,13 +1,13 @@
 .navigation {
    align-items: center;
    display: flex;
-   justify-content: space-between;
    margin: 0 40px;
    position: relative;
    top: 20px;
 }
 
 .navigation__logo {
+   cursor: pointer;
    height: 32px;
    position: relative;
    top: -2px;
@@ -16,6 +16,7 @@
 .navigation__links {
    display: flex;
    list-style: none;
+   padding: 0;
 }
 
 .navigation__links > li {
@@ -24,7 +25,13 @@
 
 .navigation__links > li > a {
    color: #fff;
+   cursor: pointer;
    font-size: 14px;
    text-decoration: none;
    font-weight: 300;
+}
+
+.navigation__spacer {
+   display: flex;
+   flex: 1;
 }

@@ -1,0 +1,10 @@
+.pill-button {
+   align-items: center;
+   border-style: solid;
+   border-color: #191919;
+   border-width: 3px;
+   background-color: #F25C44;
+   border-radius: 30px;
+   display: flex;
+   padding: 0 14px;
+}

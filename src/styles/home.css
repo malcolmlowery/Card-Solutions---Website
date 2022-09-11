@@ -1,11 +1,98 @@
 .home {
-   align-items: center;
-   background-color: #191919;
-   display: flex;
-   height: 100vh;
-   justify-content: center;
+   margin: 0 40px;
+   position: relative;
+   top: 90px;
 }
 
-.home__title {
-   color: #f6f6f6;
+.home__introduction {
+   align-items: center;
+   display: flex;
+   justify-content: space-between;
+}
+
+.home__hero-text-container__image {
+   height: 56px;
+   left: 630px;
+   top: 40px;
+   position: absolute;
+}
+
+.home__hero-text-container > h1 {
+   color: #fff;
+   font-weight: 400;
+   font-size: 6em;
+   line-height: 1.3em;
+}
+
+.home__get-started {
+   align-items: center;
+   display: flex;
+   cursor: pointer;
+}
+
+.home__get-started > p {
+   color: #F25C44;
+   font-size: 18px;
+}
+
+.home__get-started > img {
+   height: 60px;
+   margin-left: 36px;
+}
+
+/* Card Section */
+.home__card-section {
+   position: relative;
+   top: 80px;
+}
+
+.home__card-section__credit-cards {
+   height: 613px;
+}
+
+.home__card-section_text-01 {
+   color: #fff;
+   font-size: 14px;
+   position: absolute;
+   right: 34px;
+   top: 30px;
+}
+
+.home__card-section_text-01 > p {
+   color: #fff;
+   font-weight: 300;
+   font-size: 14px;
+}
+
+.home__card-section__emblem {
+   bottom: 90px;
+   height: 140px;
+   left: 56px;
+   position: absolute;
+}
+
+.home__card-section__users {
+   bottom: 80px;
+   display: flex;
+   left: 250px;
+   position: absolute;
+}
+
+.home__card-section__users__text {
+   align-items: center;
+   color: #d2d2d2;
+   display: flex;
+   font-size: 14px;
+   font-weight: 200;
+   letter-spacing: 0.3px;
+   position: relative;
+   top: 60px;
+}
+
+.orange-dot {
+   background-color: #F25C44;
+   border-radius: 4px;
+   height: 8px;
+   margin-right: 10px;
+   width: 8px;
 }
