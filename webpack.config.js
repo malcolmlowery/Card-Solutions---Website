@@ -35,6 +35,7 @@ module.exports = {
    },
    plugins: [
       new HTMLWebpackPlugin({
+         inject: false,
          title: 'Development',
          template: './src/index.html'
        }),

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navigation from './components/navigation/Navigation.jsx';
-import './globals';
+import './styles/globals';
 
 // Views
 import Home from './views/home';

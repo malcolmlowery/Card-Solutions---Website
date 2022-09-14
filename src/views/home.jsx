@@ -7,7 +7,7 @@ import StarIcon from '../assets/images/star-01.png';
 import EmblemIcon from '../assets/images/emblem-01.png';
 import UserIcon01 from '../assets/images/user-01.jpeg';
 import UserIcon02 from '../assets/images/user-02.jpeg';
-import UserIcon03 from '../assets/images/user-03.jpeg';
+import UserIcon04 from '../assets/images/user-04.jpg';
 
 // Components
 import CreditCard from '../components/credit-card/CreditCard.jsx';
@@ -18,18 +18,19 @@ const Home = () => {
    return(
       <div className='home'>
          <section className='home__introduction'>
-            <div className='home__hero-text-container'>
-               <img className='home__hero-text-container__image' src={StarIcon} />
+            <div className='home__introduction__hero-text-container'>
+               <img className='home__introduction__hero-text-container__image' src={StarIcon} />
                <h1>Make Simple</h1>
                <span />
                <h1>with One <font color='#F25C44'>Card</font></h1>
             </div>
-            <div className='home__get-started'>
+            <div className='home__introduction__get-started'>
                <p>GET STARTED NOW</p>
                <img src={CircleArrowIcon} />
             </div>
          </section>
-         <section className='home__card-section'>
+
+         {/* <section className='home__card-section'>
             <div className='home__card-section_text-01'>
                <p><span style={{ fontWeight: '400', fontSize: 18 }}>CARD</span> is the digital payment service. With one card you can</p>
                <span/>
@@ -75,7 +76,7 @@ const Home = () => {
             <div className='home__card-section__users'>
                <Avatar profileImage={UserIcon01} style={{ position: 'absolute' }} />
                <Avatar imageTranslateX={-10} profileImage={UserIcon02} style={{ position: 'absolute', left: 34 }} />
-               <Avatar imageTranslateX={-10} profileImage={UserIcon03} style={{ position: 'absolute', left: 74 }} />
+               <Avatar imageTranslateX={-3} profileImage={UserIcon04} style={{ position: 'absolute', left: 74 }} />
                <PillButton style={{ position: 'absolute', left: 112, height: 45 }}>
                   <h1 style={{ color: '#fff', fontSize: 17, fontWeight: '500', letterSpacing: 0.3 }}>20k+</h1>
                </PillButton>
@@ -84,7 +85,26 @@ const Home = () => {
                   <p>Recommended by people</p>
                </div>
             </div>
-         </section>
+         </section> */}
+
+         {/* <section className='home__statistics'>
+            <div className='home__statistics__item-01'>
+               <h1>2.4k</h1><h1 style={{ color: '#F25C44' }}>+</h1>
+               <p>Total customers</p>
+            </div>
+            <div className='home__statistics__item-01'>
+               <h1>4.9/</h1><h1 style={{ color: '#F25C44' }}>5</h1>
+               <p>Customer review</p>
+            </div>
+            <div className='home__statistics__item-01'>
+               <h1 style={{ color: '#F25C44' }}>+</h1><h1>796</h1>
+               <p>Partners & Investors</p>
+            </div>
+            <div className='home__statistics__item-01'>
+               <h1>89</h1><h1 style={{ color: '#F25C44' }}>%</h1>
+               <p>Company growth</p>
+            </div>
+         </section> */}
       </div>
    )
 };
