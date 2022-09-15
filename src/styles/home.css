@@ -137,3 +137,119 @@
    font-size: 12px;
    margin-top: 4px;
 }
+
+.home_line-divider {
+   background-color: #F7F7F7;
+   border-radius: 2px;
+   margin-inline: auto;
+   height: 4px;
+   width: 30%;
+   margin-top: 65px;
+}
+
+/* Learn More Section */
+.home__learn-more {
+}
+
+.home__learn-more__title {
+   color: #fff;
+   font-size: 2.7rem;
+   font-weight: 500;
+   margin: 40px 10px;
+   text-align: center;
+}
+
+.home__learn-more__card {
+   background-color: #F7F7F7;
+   overflow: hidden;
+}
+
+.home__learn-more__card:last-child {
+   background-color: #272727;
+   color: #fff;
+   margin-top: 20px;
+   border-top: solid 1px rgba(255, 255, 255, 0.1);
+   border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+.home__learn-more__card__title {
+   font-weight: 600;
+   font-size: 2rem;
+   padding: 0 2rem;
+   padding-top: 2.8rem;
+}
+
+.home__learn-more__card__body {
+   font-weight: 300;
+   padding: 2rem;
+}
+
+.home__learn-more__card__image {
+   position: relative;
+   top: 8px;
+   width: 100%;
+}
+
+/* We Serve Section */
+.home__we-serve {
+   margin-top: 60px;
+   background-color: #F7F7F7;
+   padding: 40px;
+}
+
+.home__we-serve__title {
+   color: #252525;
+   font-size: 2rem;
+   margin-bottom: 80px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+.home__we-serve__item {
+   margin-bottom: 40px;
+}
+
+.home__we-serve__item > h1 {
+   font-weight: 500;
+   font-size: 1.2em;
+}
+
+.home__we-serve__item > p {
+   color: #000;
+   font-weight: 300;
+   font-size: 0.9em;
+   margin: 10px 0;
+   opacity: 0.7;
+}
+
+.home__we-serve__item__button {
+   align-items: center;
+   display: flex;
+   margin-top: 18px;
+}
+
+.home__we-serve__item__button p {
+   color: #F25C44;
+   font-weight: 600;
+   letter-spacing: 0;
+}
+
+.home__we-serve__item__button img {
+   height: 45px;
+   margin-left: 30px;
+}
+
+.home__we-serve__credit-card {
+   display: flex;
+   justify-content: center;
+   left: 10px;
+   margin: 70px 0;
+   position: relative;
+}
+
+.home__we-serve__item-divider {
+   background-color: #d8d8d8;
+   height: 2px;
+   margin-inline: auto;
+   margin-bottom: 30px;
+}
