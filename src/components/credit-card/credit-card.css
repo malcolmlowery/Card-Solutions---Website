@@ -61,13 +61,13 @@
 
 .credit-card__body > h1 {
    font-weight: 500;
-   font-size: 28px;
+   font-size: 1em;
    letter-spacing: 1.3px;
    margin-top: 2px;
 }
 
 .credit-card__footer {
-   align-items: flex-end;
+   align-items: flex-start;
    display: flex;
    justify-content: space-between;
    margin-top: 30px;
@@ -75,10 +75,11 @@
 
 .credit-card__footer > h1 {
    font-weight: 400;
+   font-size: 1em;
 }
 
 .credit-card__footer__validDate > h1 {
    font-weight: 500;
-   font-size: 22px;
+   font-size: 0.7em;
    letter-spacing: 1.3px;
 }

@@ -34,7 +34,11 @@ const Navigation = () => {
                   </li>
                </ul>
                <div className='navbar__hamburger' onClick={() => setNavbarMenuActive(!navbarMenuActive)}>
-                  <img className='navbar__hamburger__icon' src={HamburgerIcon} />
+                  { !navbarMenuActive ?
+                     <img className='navbar__hamburger__icon' src={HamburgerIcon} />
+                     :
+                     <img className='navbar__hamburger__icon' src={CloseIcon} />
+                  }
                </div>
             </nav>
          </header>

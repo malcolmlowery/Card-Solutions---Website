@@ -6,5 +6,6 @@
    background-color: #F25C44;
    border-radius: 30px;
    display: flex;
+   max-width: fit-content;
    padding: 0 14px;
 }

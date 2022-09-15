@@ -1,13 +1,16 @@
 .home {
-   margin: 0 40px !important;
    position: relative;
-   top: 90px;
+   top: 100px;
+   max-width: 600px;
+   margin-inline: auto;
 }
 
+/* Introduction Section */
 .home__introduction {
    align-items: center;
    display: flex;
-   justify-content: space-between;
+   flex-direction: column;
+   text-align: center;
 }
 
 .home__introduction__hero-text-container__image {
@@ -19,176 +22,118 @@
 
 .home__introduction__hero-text-container {
    font-size: clamp(2em, 4em, 4vw + 1em);
+   margin-bottom: 30px;
 }
 
 .home__introduction__hero-text-container > h1 {
    color: #fff;
-   font-weight: 400;
-   line-height: 1.3em;
+   font-weight: 500;
+   line-height: 1.4em;
+   font-size: clamp(1.2em, 2em, 1vw + 0.4em);
 }
 
 .home__introduction__get-started {
    align-items: center;
    display: flex;
    cursor: pointer;
-   font-size: clamp(0.3em, 2em, 1vw + 0.4em);
 }
 
 .home__introduction__get-started > p {
    color: #F25C44;
+   line-height: 1.4em;
+   font-size: clamp(0.9em, 2em, 1vw + 0.4em);
    text-align: center;
 }
 
 .home__introduction__get-started > img {
-   height: 60px;
-   margin-left: 20px;
+   height: 35px;
+   margin-left: 16px;
 }
 
-/* Card Section */
+/* Mission Statement Section */
+.home__mission-statement {
+   color: rgba(255, 255, 255, 0.75);
+   font-size: 14px;
+   margin: 0 30px;
+   margin-top: 36px;
+   margin-bottom: 0px;
+   line-height: 20px;
+   text-align: center;
+}
+
+/* Credit Card Section */
 .home__card-section {
-   position: relative;
-   margin-top: 80px;
+   display: flex;
+   justify-content: center;
+   margin-top: 44px;
 }
 
 .home__card-section__credit-cards {
    height: 613px;
+   align-self: center;
 }
 
-.home__card-section_text-01 {
-   color: #fff;
-   font-size: 14px;
-   position: absolute;
-   right: 34px;
-   top: 30px;
-}
-
-.home__card-section_text-01 > p {
-   color: #fff;
-   font-weight: 300;
-   font-size: 14px;
-}
-
-.home__card-section__emblem {
-   bottom: 90px;
-   height: 140px;
-   left: 56px;
-   position: absolute;
-}
-
-.home__card-section__users {
-   bottom: 80px;
-   display: flex;
-   left: 250px;
-   position: absolute;
-}
-
-.home__card-section__users__text {
+/* User Count */
+.home__users {
    align-items: center;
-   color: #d2d2d2;
    display: flex;
-   font-size: 14px;
-   font-weight: 200;
-   letter-spacing: 0.3px;
+   flex-direction: column;
+   margin-top: 46px;
+}
+
+.home__users__avatars {
+   display: flex;
    position: relative;
-   top: 60px;
+   left: 14px;
+}
+
+.home__users__text {
+   align-items: center;
+   color: rgba(255, 255, 255, 0.75);
+   display: flex;
+   font-size: 13px;
+   margin-top: 10px;
 }
 
 .orange-dot {
    background-color: #F25C44;
-   border-radius: 4px;
-   height: 8px;
-   margin-right: 10px;
-   width: 8px;
+   border-radius: 3px;
+   height: 6px;
+   margin-right: 6px;
+   width: 6px;
 }
 
+/* Statistics Section */
 .home__statistics {
-   background-color: #282828;
-   display: flex;
-   justify-content: space-evenly;
-   margin-top: 80px;
-   padding: 100px 0;
+   background-color: #272727;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   margin-top: 46px;
 }
 
-.home__statistics__item-01 {
+.home__statistics__item {
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   padding: 50px 20px;
    text-align: center;
 }
 
-.home__statistics__item-01 > h1 {
+.home__statistics__item:nth-child(1), 
+.home__statistics__item:nth-child(4) {
+   background-color: #252525;
+}
+
+.home__statistics__item > h1 {
    color: #fff;
-   font-weight: 500;
-   font-size: clamp(3em, 6vw, 4em);
-   display: inline;
+   display: flex;
+   font-weight: 600;
 }
 
-.home__statistics__item-01 > p {
-   color: rgba(255, 255, 255, 0.8);
-   font-size: clamp(0.8em, 1vw, 1em)
-}
-
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 920px) {
-   .home {
-      margin: 0 !important;
-      position: relative;
-      top: 90px;
-   }
-
-   .home__introduction {
-      flex-direction: column;
-      text-align: center;
-   }
-   
-   .home__introduction__hero-text-container {
-      font-size: 1em;
-      margin-bottom: 30px;
-   }
-
-   .home__introduction__get-started > p {
-      font-size: 1.3em;
-   }
-
-   .home__introduction__get-started > img {
-      height: 35px;
-      margin-left: 16px;
-   }
-
-   .home__statistics {
-      background-color: #282828;
-      display: flex;
-      justify-content: space-evenly;
-      margin-top: 80px;
-      padding: 100px 0;
-   }
-}
-
-@media only screen and (max-width: 616px) {
-   .home__card-section {
-      width: 375px;
-   }
-
-   .home__card-section__credit-cards {
-      margin-top: 0;
-      transform: scale(0.26);
-      position: relative;
-      left: -111px;
-   }
-
-   .home__card-section__emblem {
-      left: 0;
-      height: 120px;
-      position: relative;
-      left: 130px;
-   }
-
-   .home__card-section__users {
-      left: 90px;
-      position: relative;
-   }
+.home__statistics__item > p {
+   color: rgba(255, 255, 255, 0.70);
+   font-size: 12px;
+   margin-top: 4px;
 }
