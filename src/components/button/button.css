@@ -4,6 +4,7 @@
    display: flex;
    padding: 7px 9px;
    cursor: pointer;
+   float: right;
 }
 
 .button--pillBtn {

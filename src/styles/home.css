@@ -1,7 +1,6 @@
 .home {
    position: relative;
    top: 100px;
-   max-width: 600px;
    margin-inline: auto;
 }
 
@@ -41,7 +40,7 @@
 .home__introduction__get-started > p {
    color: #F25C44;
    line-height: 1.4em;
-   font-size: clamp(0.9em, 2em, 1vw + 0.4em);
+   font-size: clamp(0.8em + 1vw, 2vw, 2vw);
    text-align: center;
 }
 
@@ -59,6 +58,8 @@
    margin-bottom: 0px;
    line-height: 20px;
    text-align: center;
+   max-width: 340px;
+   margin-inline: auto;
 }
 
 /* Credit Card Section */
@@ -149,6 +150,15 @@
 
 /* Learn More Section */
 .home__learn-more {
+   display: flex;
+   flex-direction: column;
+}
+
+.home__learn-more__card-container {
+   display: flex;
+   flex-direction: column;
+   margin-inline: auto;
+   max-width: 400px;
 }
 
 .home__learn-more__title {
@@ -207,6 +217,7 @@
 
 .home__we-serve__item {
    margin-bottom: 40px;
+   margin-inline: auto;
 }
 
 .home__we-serve__item > h1 {
@@ -252,4 +263,89 @@
    height: 2px;
    margin-inline: auto;
    margin-bottom: 30px;
+   margin-top: 30px;
+}
+
+@media only screen and (min-width: 1200px) {
+   .home {
+      position: relative;
+      top: 130px;
+      margin-inline: auto;
+   }
+
+   .home__introduction {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-inline: auto;
+      max-width: 1200px;
+   }
+
+   .home__introduction__hero-text-container > h1 {
+      margin-left: 20px;
+      text-align: left;
+   }
+
+   .home__learn-more__card-container {
+      flex-direction: row;
+      justify-content: center;
+      gap: 80px;
+   }
+   
+   .home__mission-statement {
+      font-size: 1.1em;
+      line-height: 1.25em;
+      max-width: 480px;
+      text-align: left;
+   }
+
+   .home__users {
+      position: relative;
+      right: 70px;
+   }
+
+   .home__learn-more__card {
+      min-width: 400px;
+      padding: 50px 0;
+      height: 515px;
+   }
+
+   .home__learn-more__card:last-child {
+      margin-top: 0;
+   }
+
+   .home__learn-more__card__body {
+      height: 248px;
+   }
+
+   .home__statistics {
+      width: 1200px;
+      margin-inline: auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: none;
+   }
+
+   .home__statistics__item:nth-child(even) {
+      background-color: #2b2b2b;
+   }
+
+   .home__statistics__item {
+      padding: 80px;
+   }
+
+   .home__we-serve {
+   }
+
+   .home__we-serve__items-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-inline: auto;
+   }
+
+   .home__we-serve__item {
+      flex-basis: 400px;
+   }
+
+   .home__we-serve__item-divider {
+      display: none;
+   }
 }

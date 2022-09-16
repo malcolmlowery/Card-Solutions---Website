@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/home';
-
+import { screenSize } from '../utils/screen-size-detection';
 // Icons
 import CircleArrowIcon from '../assets/images/circle-arrow-01.png';
 import BackgroundImage01 from '../assets/images/bg-01.png';
@@ -14,6 +14,8 @@ import Avatar from '../components/avatar/Avatar.jsx';
 import PillButton from '../components/pill-button/PillButton';
 
 const Home = () => {
+   const { screenWidth } = screenSize();
+   console.log(screenWidth)
    return(
       <div className='home'>
          <section className='home__introduction'>
@@ -30,35 +32,80 @@ const Home = () => {
 
          <section className='home__mission-statement'>
             <p>
-               <span style={{ color: '#fff', fontWeight: '500', fontSize: 18 }}>CARD </span> 
+               <span style={{ color: '#fff', fontWeight: '500', fontSize: '1.2em' }}>CARD </span> 
                is the digital payment service. With one card you can manage your daily financials and can also 
                <span style={{ color: '#F25C44', fontWeight: '600', }}> get more benefits</span>.
             </p>
          </section>
 
-         <section className='home__card-section'>
-            <CreditCard
-               cardholderName='Malcolm Lowery'
-               cardNumber='5154-2847-1601-9396'
-               validDate='09/22'
-               cardColor='#45454555'
-               style={{ 
-                  position: 'absolute',
-                  zIndex: 10,
-                  zoom: 0.7,
-               }}
-            />
-            <CreditCard
-               cardholderName='Malcolm Lowery'
-               cardNumber='5154-2847-1601-9396'
-               validDate='09/22'
-               cardColor='#45454555'
-               style={{ 
-                  marginTop: 80,
-                  zoom:  0.6,
-               }}
-            />
-         </section>
+         {screenWidth < 1200 ?
+            <section className='home__card-section'>
+               <CreditCard
+                  cardholderName='Malcolm Lowery'
+                  cardNumber='5154-2847-1601-9396'
+                  validDate='09/22'
+                  cardColor='#45454555'
+                  style={{ 
+                     position: 'absolute',
+                     zIndex: 10,
+                     zoom: 0.7,
+                  }}
+               />
+               <CreditCard
+                  cardholderName='Malcolm Lowery'
+                  cardNumber='5154-2847-1601-9396'
+                  validDate='09/22'
+                  cardColor='#288ceab8'
+                  style={{ 
+                     marginTop: 80,
+                     zoom:  0.6,
+                  }}
+               />
+            </section>
+            :
+            <section className='home__card-section' style={{ width: 1200, position: 'relative', marginInline: 'auto', transform: 'scale(0.9)' }}>
+               <CreditCard
+                  cardholderName='Malcolm Lowery'
+                  cardNumber='5154-2847-1601-9396'
+                  validDate='09/22'
+                  cardColor='#45454555'
+                  style={{ 
+                     left: 0,
+                     position: 'absolute',
+                     zIndex: 10,
+                     zoom: 1.18,
+                  }}
+               />
+               <CreditCard
+                  cardholderName='Malcolm Lowery'
+                  cardNumber='5154-2847-1601-9396'
+                  validDate='09/22'
+                  cardColor='#288ceab8'
+                  style={{ 
+                     marginTop: 80,
+                     zoom:  1.18,
+                     left: 216,
+                     top: 38,
+                     position: 'relative',
+                     zIndex: 9,
+                  }}
+               />
+               <CreditCard
+                  cardholderName='Malcolm Lowery'
+                  cardNumber='5154-2847-1601-9396'
+                  validDate='09/22'
+                  cardColor='#288ceab8'
+                  style={{ 
+                     marginTop: 80,
+                     zoom:  1.18,
+                     left: 80,
+                     top: 156,
+                     position: 'relative',
+                     zIndex: 8,
+                  }}
+               />
+            </section>
+         }
 
          <section className='home__users'>
             <div className='home__users__avatars'>
@@ -97,8 +144,8 @@ const Home = () => {
          <div className='home_line-divider'></div>
 
          <section className='home__learn-more'>
-           <div>
             <h1 className='home__learn-more__title'>The <span style={{ color: '#F25C44' }}>Advantages</span></h1>
+           <div className='home__learn-more__card-container'>
                <div className='home__learn-more__card'>
                   <h1 className='home__learn-more__card__title'>All payment <span style={{ display: 'block'}}>solutions</span></h1>
                   <p className='home__learn-more__card__body'>
@@ -156,32 +203,34 @@ const Home = () => {
                />
             </div>
 
-            <div className='home__we-serve__item'>
-               <h1>CARD made with best material</h1>
-               <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
-               <div className='home__we-serve__item__button'>
-                  <p>LEARN MORE</p>
-                  <img src={CircleArrowIcon} />
+            <div className="home__we-serve__items-group">
+               <div className='home__we-serve__item'>
+                  <h1>CARD made with best material</h1>
+                  <p>It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+                  <div className='home__we-serve__item__button'>
+                     <p>LEARN MORE</p>
+                     <img src={CircleArrowIcon} />
+                  </div>
+                  <div className='home__we-serve__item-divider'></div>
                </div>
-            </div>
-            
-            <div className='home__we-serve__item-divider'></div>
+               
 
-            <div className='home__we-serve__item'>
-               <h1>Designed with love, so we produce<span style={{ display: 'block'}}>premium high quality design</span></h1>
-               <div className='home__we-serve__item__button'>
-                  <p>LEARN MORE</p>
-                  <img src={CircleArrowIcon} />
+               <div className='home__we-serve__item'>
+                  <h1>Designed with love, so we produce<span style={{ display: 'block'}}>premium high quality design</span></h1>
+                  <div className='home__we-serve__item__button'>
+                     <p>LEARN MORE</p>
+                     <img src={CircleArrowIcon} />
+                  </div>
+                  <div className='home__we-serve__item-divider'></div>
                </div>
-            </div>
 
-            <div className='home__we-serve__item-divider'></div>
 
-            <div className='home__we-serve__item'>
-            <h1>We launch our new product special limited edition with special benefits</h1>
-               <div className='home__we-serve__item__button'>
-                  <p>LEARN MORE</p>
-                  <img src={CircleArrowIcon} />
+               <div className='home__we-serve__item'>
+               <h1>We launch our new product special limited edition with special benefits</h1>
+                  <div className='home__we-serve__item__button'>
+                     <p>LEARN MORE</p>
+                     <img src={CircleArrowIcon} />
+                  </div>
                </div>
             </div>
          </section>

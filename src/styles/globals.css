@@ -7,9 +7,7 @@
 
 body {
    background-color: #191919;
-   margin: 0 auto;
-   height: 2000px;
-   max-width: 1078px;
+   margin-inline: auto;
 }
 
 p {
