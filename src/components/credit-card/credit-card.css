@@ -1,86 +1,86 @@
 .credit-card {
-   background-color: transparent;
-   backdrop-filter: blur(70px);
-   border-radius: 24px;
-   color: #fff;
-   max-height: 300px;
-   padding: 30px;
-   width: 430px;
+  background-color: transparent;
+  backdrop-filter: blur(70px);
+  border-radius: 24px;
+  color: #fff;
+  max-height: 300px;
+  padding: 30px;
+  width: 430px;
 }
 
 .credit-card__background {
-   box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.1);
-   border-radius: 24px;
-   bottom: 0;
-   left: 0;
-   position: absolute;
-   right: 0;
-   top: 0;
-   z-index: -1;
+  box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
 }
 
 .credit-card__header {
-   align-items: center;
-   display: flex;
-   justify-content: space-between;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .credit-card__header__logo {
-   align-items: center;
-   display: flex;
+  align-items: center;
+  display: flex;
 }
 
 .credit-card__header__logo > img {
-   height: 44px;
-   margin-right: 12px;
+  height: 44px;
+  margin-right: 12px;
 }
 
 .credit-card__header__logo > p {
-   font-weight: 300;
-   letter-spacing: 0.2px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
 }
 
 .credit-card__header {
-   display: flex;
+  display: flex;
 }
 
 .credit-card__header__chip {
-   background-color: #eff1f3;
-   border-radius: 10px;
-   height: 40px;
-   width: 60px;
+  background-color: #eff1f3;
+  border-radius: 10px;
+  height: 40px;
+  width: 60px;
 }
 
 .credit-card__body {
-   margin-top: 50px;
+  margin-top: 50px;
 }
 
 .credit-card__body > p {
-   letter-spacing: 0.2px;
-   font-weight: 300;
+  letter-spacing: 0.2px;
+  font-weight: 300;
 }
 
 .credit-card__body > h1 {
-   font-weight: 500;
-   font-size: 1em;
-   letter-spacing: 1.3px;
-   margin-top: 2px;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 1.3px;
+  margin-top: 2px;
 }
 
 .credit-card__footer {
-   align-items: flex-start;
-   display: flex;
-   justify-content: space-between;
-   margin-top: 30px;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
 }
 
 .credit-card__footer > h1 {
-   font-weight: 400;
-   font-size: 1em;
+  font-weight: 400;
+  font-size: 1em;
 }
 
 .credit-card__footer__validDate > h1 {
-   font-weight: 500;
-   font-size: 0.7em;
-   letter-spacing: 1.3px;
+  font-weight: 500;
+  font-size: 0.7em;
+  letter-spacing: 1.3px;
 }

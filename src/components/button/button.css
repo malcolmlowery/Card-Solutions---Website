@@ -1,31 +1,31 @@
 .button {
-   align-items: center;
-   color: #fff;
-   display: flex;
-   padding: 7px 9px;
-   cursor: pointer;
-   float: right;
+  align-items: center;
+  color: #fff;
+  display: flex;
+  padding: 7px 9px;
+  cursor: pointer;
+  float: right;
 }
 
 .button--pillBtn {
-   background-color: #272727;
-   border-radius: 40px;
-   font-size: 15px;
-   font-weight: 200;
-   letter-spacing: 0.1px;
+  background-color: #272727;
+  border-radius: 40px;
+  font-size: 15px;
+  font-weight: 200;
+  letter-spacing: 0.1px;
 }
 
 .button--pillBtn > img:first-child {
-   border-radius: 12px;
-   height: 24px;
-   margin-right: 8px;
-   width: 24px;
+  border-radius: 12px;
+  height: 24px;
+  margin-right: 8px;
+  width: 24px;
 }
 
 .button--pillBtn > img:last-child {
-   height: 18px;
-   margin-left: 4px;
-   margin-right: 0;
-   width: 18px;
-   position: relative;
+  height: 18px;
+  margin-left: 4px;
+  margin-right: 0;
+  width: 18px;
+  position: relative;
 }

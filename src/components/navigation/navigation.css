@@ -1,84 +1,84 @@
 li {
-   list-style: none;
+  list-style: none;
 }
 
 a {
-   color: #fff;
-   text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 .navbar {
-   align-items: center;
-   background-color: #191919;
-   display: flex;
-   justify-content: space-between;
-   left: 0;
-   max-width: 1200px;
-   margin: 0 auto;
-   padding: 1rem 1.5rem;
-   position: fixed;
-   right: 0;
-   z-index: 99;
+  align-items: center;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  position: fixed;
+  right: 0;
+  z-index: 99;
 }
 
 .navbar__logo > img {
-   cursor: pointer;
-   height: 38px;
-   object-fit: contain;
+  cursor: pointer;
+  height: 38px;
+  object-fit: contain;
 }
 
 .navbar__menu {
-   display: flex;
+  display: flex;
 }
 
 .navbar__menu__item > li {
-   margin: 0 20px;
-   flex: 1;
+  margin: 0 20px;
+  flex: 1;
 }
 
 .navbar__hamburger__icon {
-   display: none;
+  display: none;
 }
 
 .navbar__menu__item > a:hover {
-   color: #F25C44;
+  color: #f25c44;
 }
 
 @media only screen and (max-width: 1200px) {
-   .navbar__menu {
-      background-color: #2727278e;
-      backdrop-filter: blur(36px);
-      height: 0;
-      margin-left: -1.5rem;
-      opacity: 0;
-      overflow: hidden;
-      position: fixed;
-      top: 4.9rem;
-      text-align: center;
-      flex-direction: column;
-      transition: 0.4s;
-      width: 100%;
-   }
-   
-   .navbar__menu.active {
-      opacity: 1;
-      height: 100%;
-   }
+  .navbar__menu {
+    background-color: #2727278e;
+    backdrop-filter: blur(36px);
+    height: 0;
+    margin-left: -1.5rem;
+    opacity: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 4.9rem;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.4s;
+    width: 100%;
+  }
 
-   .navbar__menu__item {
-      display: block;
-      margin: 2.5rem 0;
-   }
+  .navbar__menu.active {
+    opacity: 1;
+    height: 100%;
+  }
 
-   .navbar__hamburger__icon {
-      display: block;
-      height: 40px;
-      position: relative;
-      top: 3px;
-      bottom: 0;
-   }
+  .navbar__menu__item {
+    display: block;
+    margin: 2.5rem 0;
+  }
 
-   .navbar__hamburger {
-      cursor: pointer;
-   }
+  .navbar__hamburger__icon {
+    display: block;
+    height: 40px;
+    position: relative;
+    top: 3px;
+    bottom: 0;
+  }
+
+  .navbar__hamburger {
+    cursor: pointer;
+  }
 }

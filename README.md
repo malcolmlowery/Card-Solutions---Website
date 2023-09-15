@@ -3,11 +3,10 @@ Card Solutions - A Finance Landing Page!
 UI Inspiration: https://dribbble.com/shots/18510647/attachments/13712836?mode=media
 
 How to run this project on your machine.
+
 - npm install
 - npm start
 - Hosted on: http://localhost:8080/
-
-
 
 https://user-images.githubusercontent.com/100153203/190460329-e64701c5-0b84-4e5e-89fa-c487c71c1388.mov
 
